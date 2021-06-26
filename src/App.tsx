@@ -9,15 +9,12 @@ function App() {
   const handleChange = (event:React.FormEvent<HTMLInputElement>)=>{
     setText(event.currentTarget.value)
   }
-
-
   useEffect(()=>{
     stage.render(canva.current)
   },[])
   useEffect(()=>{
     stage.textRender(text)
     stage.render(canva.current)
-
   },[text])
   return (
     <div className="App">
