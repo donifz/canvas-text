@@ -6,14 +6,12 @@ class Stage {
     width:number;
     height:number;
     text:string
-
     constructor(){
         this.width = 600
         this.height = 400
         this.canvas = document.createElement("canvas")
         this.ctx = this.canvas.getContext("2d")
         this.text = ""
-        
     }
 
 
